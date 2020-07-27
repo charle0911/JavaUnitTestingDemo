@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  mysql-development:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: fourm
+      MYSQL_USER: test
+      MYSQL_PASS: 1234
+    ports:
+      - "3306:3306"
