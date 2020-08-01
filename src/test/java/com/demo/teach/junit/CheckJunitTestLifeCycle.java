@@ -26,6 +26,11 @@ public class CheckJunitTestLifeCycle {
         System.out.println("Hi I'm test Two");
     }
 
+    @Ignore
+    public void wontRun() {
+        System.out.println("Hi I won't run");
+    }
+
     @Test(timeout = 5000)
     public void checkTimeout() {
         try {

@@ -4,6 +4,7 @@ package com.demo.teach.mock;
 import static org.mockito.Mockito.*;
 
 import org.junit.Test;
+import org.mockito.Mock;
 
 public class TestDouble {
 
