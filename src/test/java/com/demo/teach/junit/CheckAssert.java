@@ -5,18 +5,14 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 public class CheckAssert {
 
     String t1 = "t1";
     int i1 = 1;
     boolean b1 = true;
-    int[] ia = new int[]{1,2,3};
-    List<Integer> il = Arrays.asList(1,2,3,4,5);
+    int[] ia = new int[]{1, 2, 3};
+    List<Integer> il = Arrays.asList(1, 2, 3, 4, 5);
 
     @Test
     public void testT1Equal() {
@@ -36,15 +32,15 @@ public class CheckAssert {
 
     @Test
     public void testIA() {
-        Assert.assertArrayEquals(ia, new int[]{1,2,3});
+        Assert.assertArrayEquals(ia, new int[]{1, 2, 3});
     }
 
     @Test
     public void testIL() {
         //It call by reference
-        Assert.assertNotSame(il, Arrays.asList(1,2,3,4,5));
+        Assert.assertNotSame(il, Arrays.asList(1, 2, 3, 4, 5));
 
         //It call by value
-        Assert.assertEquals(il, Arrays.asList(1,2,3,4,5));
+        Assert.assertEquals(il, Arrays.asList(1, 2, 3, 4, 5));
     }
 }
