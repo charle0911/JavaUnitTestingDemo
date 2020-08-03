@@ -1,4 +1,4 @@
-package com.demo.teach.junit.suite;
+package com.demo.teach.junit4.suite;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

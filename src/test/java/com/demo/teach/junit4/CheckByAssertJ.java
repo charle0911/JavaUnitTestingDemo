@@ -1,13 +1,9 @@
-package com.demo.teach.junit;
-
-import static org.assertj.core.api.Assertions.assertThat;
+package com.demo.teach.junit4;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.assertj.core.api.Assert;
 import org.junit.BeforeClass;
-import org.junit.Test;
 
 class TestObject {
     TestObject(String type, int cnt) {

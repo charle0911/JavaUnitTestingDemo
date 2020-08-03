@@ -1,4 +1,4 @@
-package com.demo.teach.junit;
+package com.demo.teach.junit4;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +9,11 @@ public class CheckJunitTestLifeCycle {
     @BeforeClass
     public static void checkBeforeClass() {
         System.out.println("I'm before class");
+    }
+
+    @AfterClass
+    public static void cleanClass() {
+        System.out.println("Clean class");
     }
 
     @Before
@@ -48,11 +53,6 @@ public class CheckJunitTestLifeCycle {
     @After
     public void cleanMethod() {
         System.out.println("Clean method");
-    }
-
-    @AfterClass
-    public static void cleanClass() {
-        System.out.println("Clean class");
     }
 
 }

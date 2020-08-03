@@ -1,4 +1,4 @@
-package com.demo.teach.junit;
+package com.demo.teach.junit4;
 
 import java.util.Arrays;
 import java.util.List;
